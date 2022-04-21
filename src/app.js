@@ -7,6 +7,9 @@ console.log(__dirname)
 console.log(path.join(__dirname, '../public')) //set the path to the directory
 //we are going to start server up
 const app = express()
+
+const port = process.env.PORT || 3000 // This is set port for heroku
+
 const publicDirectoryPath = path.join(__dirname, '../public')
 //partials allows us to create a little template, which is part of a bigger Web page
 const geocode = require('./utils/geocode')
@@ -125,6 +128,6 @@ app.get('*', (req, res) => { //* means match anything that hasn't been matched s
         errorMessage: 'Page not found.'
     })
 }) 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up on port 3000.' + port)
 }) //Listen on a specific port for the moment. display app.js in localhost:3000
