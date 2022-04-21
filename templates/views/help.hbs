@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Help</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}<!-- nodemon src/app.js -e js,hbs 
+        if you type this command system will allow to save hbs file also -->
+            <p>{{note}}</p>
+        </div>
+        {{>footer}}
+    </body>
+</html>
