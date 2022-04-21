@@ -129,5 +129,5 @@ app.get('*', (req, res) => { //* means match anything that hasn't been matched s
     })
 }) 
 app.listen(port, () => {
-    console.log('Server is up on port 3000.' + port)
+    console.log('Server is up on port ' + port)
 }) //Listen on a specific port for the moment. display app.js in localhost:3000
