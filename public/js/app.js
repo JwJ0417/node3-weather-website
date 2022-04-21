@@ -1,4 +1,4 @@
-console.log('Client side javascript file is loaded!')
+//console.log('Client side javascript file is loaded!')
 //
 
 // this is the function, call the url and show in client side.
